@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main class="container text-primary">
+      <div class="product-card bg-primary">
+        <img
+          src="/images/image-product-mobile.jpg"
+          alt="Gabrielle Escence Eau de Parfum"
+          srcset="
+            /images/image-product-mobile.jpg,
+            /images/image-product-desktop.jpg 2x
+          "
+        />
+        <div class="product-card-body">
+          <h1 class="text-headings text-sm" data-product-category="perfume">
+            Gabrielle Escence Eau de Parfum
+          </h1>
+          <p class="mb-8">
+            A floral, solar and voluptuous interpretation composed by Oliver
+            Polge, Perfumer-Creator for the House of CHANEL
+          </p>
+          <p class="mb-8 text-accent text-2xl flex family-secondary">
+            $144.99
+            <span class="text-primary text-xs family-primary">$169.99</span>
+          </p>
+          <button class="bg-accent flex">
+            <img src="/images/icon-cart.svg" alt="Button cart icon" />
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
