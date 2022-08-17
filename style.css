@@ -154,9 +154,10 @@ select {
 .product-card > img {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  height: 200px;
+  height: 280px;
   width: 100%;
   object-fit: cover;
+  object-position: 10% 38%;
 }
 
 .product-card-body {
